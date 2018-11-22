@@ -13,7 +13,7 @@
 #include <QTextStream>
 
 
-KANS_(TextIO)
+namespace KA { namespace TextIO {
 
 
 inline QString load_file(QString path)
@@ -66,7 +66,7 @@ inline void save_file(QString path, QString text)
  outfile.close();
 }
 
-_KANS(TextIO)
+} }
 
 
 #endif //TEXTIO__H

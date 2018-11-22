@@ -16,11 +16,11 @@
 
 #include "accessors.h"
 
-KANS_CLASS_DECLARE(KCM ,KCM_Channel_Group)
-KANS_CLASS_DECLARE(KCM ,Kauvir_Code_Model)
-USING_KANS(KCM)
+namespace KA { namespace KCM { class KCM_Channel_Group; } }
+namespace KA { namespace KCM { class Kauvir_Code_Model; } }
+using namespace KA::KCM;
 
-KANS_(Phaon)
+namespace KA { namespace Phaon {
 
 class KPH_Carrier;
 
@@ -79,7 +79,7 @@ public:
 };
 
 
-_KANS(PhaonLib)
+} }
 
 
 #endif //KPH_COMMAND_PACKAGE__H

@@ -7,7 +7,7 @@
 
 #include "distractor.h"
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 Distractor::Distractor(QString name, Enum en)
   :  name_(name), en_(en)

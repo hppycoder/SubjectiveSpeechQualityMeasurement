@@ -20,13 +20,11 @@
 
 #include "kcm-channel.h"
 
-
-KANS_CLASS_DECLARE(Kauvir ,Kauvir_Type_Object)
-USING_KANS(Kauvir)
-
+namespace KA { namespace Kauvir { class Kauvir_Type_Object; } }
+using namespace KA::Kauvir;
 
 
-KANS_(KCM)
+namespace KA { namespace KCM {
 
 
 class KCM_Report_Syntax
@@ -74,8 +72,6 @@ public:
 
 };
 
-
-_KANS(KCM)
-
+} }
 
 #endif //KCM_REPORT_SYNTAX__H

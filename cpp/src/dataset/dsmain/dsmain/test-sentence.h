@@ -19,7 +19,7 @@
 #include "precon.h"
 
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Test_Sample;
 
@@ -40,6 +40,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // TEST_SENTENCE__H

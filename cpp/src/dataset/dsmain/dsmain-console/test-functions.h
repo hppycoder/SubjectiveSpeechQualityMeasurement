@@ -18,21 +18,19 @@
 
 #include <QMap>
 
+namespace KA { namespace KCM { class Kauvir_Code_Model; } }
+using namespace KA::KCM;
 
-KANS_CLASS_DECLARE(KCM ,Kauvir_Code_Model)
-USING_KANS(KCM)
+namespace KA { namespace PhaonLib { class Phaon_Channel_Group_Table; } }
+namespace KA { namespace PhaonLib { class Phaon_Symbol_Scope; } }
+using namespace KA::PhaonLib;
 
-KANS_CLASS_DECLARE(PhaonLib ,Phaon_Channel_Group_Table)
-KANS_CLASS_DECLARE(PhaonLib ,Phaon_Symbol_Scope)
-USING_KANS(PhaonLib)
-
-
-KANS_(Phaon)
+namespace KA { namespace Phaon {
 
 void init_test_functions(void* origin, Kauvir_Code_Model& kcm,
   Phaon_Channel_Group_Table& table, Phaon_Symbol_Scope& pss);
 
-_KANS(Phaon)
+} }
 
 
 #endif // USING_KPH

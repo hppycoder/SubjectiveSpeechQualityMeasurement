@@ -7,7 +7,7 @@
 
 #include "assessment-scores-average.h"
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 
 Assessment_Scores_Average::Assessment_Scores_Average()

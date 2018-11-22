@@ -7,7 +7,7 @@
 
 #include "assessment-scores.h"
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 
 Assessment_Scores::Assessment_Scores()

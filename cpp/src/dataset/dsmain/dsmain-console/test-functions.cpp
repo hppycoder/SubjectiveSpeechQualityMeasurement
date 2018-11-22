@@ -37,10 +37,10 @@
 #undef slots
 #include "kcm-lisp-bridge/kcm-lisp-eval.h"
 
-USING_KANS(KCL)
-USING_KANS(PhaonLib)
+using namespace KA::KCL;
+using namespace KA::PhaonLib;
 
-KANS_(Phaon)
+namespace KA { namespace Phaon {
 
 
 void* insert_envv(void* kind, void* test)
@@ -188,7 +188,7 @@ void init_test_functions(void* origin, Kauvir_Code_Model& kcm,
  }
 }
 
-_KANS(Phaon)
+} }
 
 #else
 

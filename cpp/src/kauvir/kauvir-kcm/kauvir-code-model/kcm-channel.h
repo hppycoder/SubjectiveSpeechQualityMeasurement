@@ -18,10 +18,9 @@
 
 #include <QTextStream>
 
+namespace KA { namespace CMD { class KCM_Runtime_Scope; } }
 
-KANS_CLASS_DECLARE(CMD ,KCM_Runtime_Scope)
-
-KANS_(KCM)
+namespace KA { namespace KCM {
 
 class KCM_Type_Object;
 
@@ -88,7 +87,7 @@ public:
 };
 
 
-_KANS(KCM)
+} }
 
 
 #endif //KCM_CHANNEL__H

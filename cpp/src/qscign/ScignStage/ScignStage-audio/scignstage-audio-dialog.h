@@ -30,12 +30,11 @@
 
 #include "kans.h"
 
-KANS_CLASS_DECLARE(DSM ,Test_Series)
-KANS_CLASS_DECLARE(DSM ,Test_Sample)
-KANS_CLASS_DECLARE(DSM ,Test_Sentence)
+namespace KA { namespace DSM { class Test_Series; } }
+namespace KA { namespace DSM { class Test_Sample; } }
+namespace KA { namespace DSM { class Test_Sentence; } }
 
-
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 class QDialogButtonBox;
 class QLabel;
@@ -58,10 +57,10 @@ class QTcpServer;
 
 class ScignStage_Clickable_Label;
 
-class XPDF_Bridge;
+struct XPDF_Bridge;
 
-KANS_CLASS_DECLARE(PhaonLib ,Phaon_Runner)
-USING_KANS(PhaonLib)
+namespace KA { namespace PhaonLib { class Phaon_Runner; } }
+using namespace KA::PhaonLib;
 
 QSNS_(ScignStage)
 _QSNS(ScignStage)

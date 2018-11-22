@@ -16,12 +16,10 @@
 #include <QVector>
 #include <QTextStream>
 
-KANS_CLASS_DECLARE(CMD ,KCM_Runtime_Scope)
+namespace KA { namespace CMD { class KCM_Runtime_Scope; } }
+using namespace KA::CMD;
 
-USING_KANS(CMD)
-
-KANS_(KCM)
-
+namespace KA { namespace KCM {
 
 class KCM_Type_Object;
 class Kauvir_Code_Model;
@@ -109,7 +107,7 @@ public:
 };
 
 
-_KANS(KCM)
+} }
 
 
 #endif //KCM_CARRIER__H

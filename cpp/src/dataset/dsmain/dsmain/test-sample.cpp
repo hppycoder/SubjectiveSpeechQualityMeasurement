@@ -10,7 +10,7 @@
 #include "audio-sample.h"
 
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 
 Test_Sample::Test_Sample()

@@ -18,7 +18,7 @@
 #include <QTextStream>
 #include <QSet>
 
-KANS_(KCM)
+namespace KA { namespace KCM {
 
 
 class KCM_Type_Object;
@@ -192,8 +192,7 @@ public:
 
 };
 
-
-_KANS(KCM)
+} }
 
 
 #endif //KCM_CHANNEL_GROUP__H

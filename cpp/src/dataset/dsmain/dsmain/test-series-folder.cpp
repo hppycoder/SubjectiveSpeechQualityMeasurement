@@ -15,9 +15,8 @@
 #include <QDir>
 #include <QDebug>
 
-USING_KANS(DSM)
-
-USING_KANS(TextIO)
+using namespace KA::DSM;
+using namespace KA::TextIO;
 
 
 Test_Series_Folder::Test_Series_Folder(QString ring_path)

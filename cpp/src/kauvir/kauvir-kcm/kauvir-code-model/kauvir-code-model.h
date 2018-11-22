@@ -27,24 +27,23 @@
 
 #include <functional>
 
+namespace KA { namespace Kauvir { class Kauvir_Type_System; } }
+namespace KA { namespace Kauvir { class Kauvir_Type_Object; } }
 
-KANS_CLASS_DECLARE(Kauvir ,Kauvir_Type_System)
-KANS_CLASS_DECLARE(Kauvir ,Kauvir_Type_Object)
+namespace KA { namespace CMD { class KCM_Command_Package; } }
+namespace KA { namespace CMD { class KCM_Command_Runtime_Table; } }
+namespace KA { namespace CMD { class KCM_Scope_System; } }
+namespace KA { namespace CMD { class KCM_Runtime_Scope; } }
 
-KANS_CLASS_DECLARE(CMD ,KCM_Command_Package)
-KANS_CLASS_DECLARE(CMD ,KCM_Command_Runtime_Table)
-KANS_CLASS_DECLARE(CMD ,KCM_Scope_System)
-KANS_CLASS_DECLARE(CMD ,KCM_Runtime_Scope)
+namespace KA { namespace Phaon { class KPH_Generator; } }
 
-KANS_CLASS_DECLARE(Phaon ,KPH_Generator)
-
-USING_KANS(Kauvir)
-USING_KANS(CMD)
-USING_KANS(Phaon)
+using namespace KA::Kauvir;
+using namespace KA::CMD;
+using namespace KA::Phaon;
 
 class KCM_Lisp_Bridge;
 
-KANS_(KCM)
+namespace KA { namespace KCM {
 
 
 class KCM_Type_Object;
@@ -300,9 +299,7 @@ public:
  void report_expression_from_code(QTextStream& qts, QString code, KCM_Report_Syntax& kcrs);
 };
 
-
-_KANS(KCM)
-
+} }
 
 #endif //KAUVIR_CODE_MODEL__H
 

@@ -10,8 +10,7 @@
 
 #include "kans.h"
 
-USING_KANS(DSM)
-USING_KANS(TextIO)
+using namespace KA::TextIO;
 
 
 RO_Info::RO_Info()

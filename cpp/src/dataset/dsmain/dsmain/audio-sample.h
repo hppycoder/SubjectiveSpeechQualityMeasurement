@@ -18,7 +18,7 @@
 #include "precon.h"
 
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Distractor;
 
@@ -39,6 +39,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // AUDIO_SAMPLE__H

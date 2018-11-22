@@ -16,8 +16,8 @@
 
 #include <QDebug>
 
-USING_KANS(DSM)
-USING_KANS(TextIO)
+using namespace KA::DSM;
+using namespace KA::TextIO;
 
 Test_Series::Test_Series()
 {
@@ -144,7 +144,6 @@ void Test_Series::parse_data_regen(QString path)
  if(text.endsWith('\n'))
    text.chop(1);
  QStringList lines = text.split('\n');
- int c = 0;
  int i = 0;
  Test_Sample* ts;
  for(QString qs : lines)

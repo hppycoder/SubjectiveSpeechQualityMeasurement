@@ -18,7 +18,7 @@
 #include "precon.h"
 
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Test_Sample;
 class Assessment_Scores;
@@ -48,6 +48,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // TEST_SERIES__H

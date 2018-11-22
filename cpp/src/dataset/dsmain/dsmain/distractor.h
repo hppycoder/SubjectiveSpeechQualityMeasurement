@@ -21,7 +21,7 @@
 #include "range-int.h"
 #include "precon.h"
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Distractor
 {
@@ -52,6 +52,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // DISTRACTOR__H

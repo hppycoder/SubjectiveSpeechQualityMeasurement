@@ -9,7 +9,7 @@
 #include "distractor.h"
 
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 
 Audio_Sample::Audio_Sample(QString file_name)

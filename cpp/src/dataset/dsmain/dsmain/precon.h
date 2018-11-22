@@ -14,7 +14,7 @@
 #include <QtGlobal>
 
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 template<typename T>
 struct precon
@@ -36,6 +36,6 @@ struct precon_pr
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // ASSESSMENT__SCORES__H

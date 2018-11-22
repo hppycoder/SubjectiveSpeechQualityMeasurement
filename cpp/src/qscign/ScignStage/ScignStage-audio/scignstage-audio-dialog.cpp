@@ -81,9 +81,9 @@
 
 #include "textio.h"
 
-USING_KANS(TextIO)
+using namespace KA::TextIO;
 
-USING_KANS(Phaon)
+using namespace KA::Phaon;
 
 //USING_QSNS(ScignStage)
 

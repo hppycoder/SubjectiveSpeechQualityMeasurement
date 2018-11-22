@@ -17,8 +17,7 @@
 #include "range-int.h"
 #include "precon.h"
 
-
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Audio_Sample;
 class Assessment_Scores_Average;
@@ -52,6 +51,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // TEST_SAMPLE__H

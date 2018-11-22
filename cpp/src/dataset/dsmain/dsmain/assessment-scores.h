@@ -16,7 +16,7 @@
 #include "range-int.h"
 #include "precon.h"
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Assessment_Scores
 {
@@ -42,6 +42,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // ASSESSMENT_SCORES__H

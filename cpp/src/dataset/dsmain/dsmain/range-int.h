@@ -14,7 +14,7 @@
 #include <QtGlobal>
 
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 template<typename T, T low, T high>
 class Range_Int
@@ -49,6 +49,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // RANGE__INT__H

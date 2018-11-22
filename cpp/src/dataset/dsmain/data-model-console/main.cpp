@@ -16,7 +16,7 @@
 
 #include "kans.h"
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 void qdb(QString str)
 {

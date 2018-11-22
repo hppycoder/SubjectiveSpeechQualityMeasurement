@@ -7,7 +7,7 @@
 
 #include "test-sentence.h"
 
-USING_KANS(DSM)
+using namespace KA::DSM;
 
 Test_Sentence::Test_Sentence(QString raw_text)
   :  raw_text_(raw_text)

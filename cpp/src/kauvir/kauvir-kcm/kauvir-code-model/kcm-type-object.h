@@ -16,13 +16,10 @@
 #include <QVector>
 #include <QTextStream>
 
+namespace KA { namespace Kauvir { class Kauvir_Type_Object; } }
+using namespace KA::Kauvir;
 
-KANS_CLASS_DECLARE(Kauvir ,Kauvir_Type_Object)
-USING_KANS(Kauvir)
-
-
-
-KANS_(KCM)
+namespace KA { namespace KCM {
 
 
 class KCM_Channel_Group;
@@ -86,8 +83,7 @@ public:
  KCM_Type_Object* base_clone() const;
 };
 
-
-_KANS(KCM)
+} }
 
 
 #endif //KCM_TYPE_OBJECT__H

@@ -15,15 +15,14 @@
 #include <QString>
 #include <QQueue>
 
-KANS_CLASS_DECLARE(KCM ,KCM_Channel_Group)
-KANS_CLASS_DECLARE(KCM ,Kauvir_Code_Model)
-USING_KANS(KCM)
+namespace KA { namespace KCM { class KCM_Channel_Group; } }
+namespace KA { namespace KCM { class Kauvir_Code_Model; } }
+using namespace KA::KCM;
 
-KANS_CLASS_DECLARE(CMD ,KCM_Scope_System)
-USING_KANS(CMD)
+namespace KA { namespace CMD { class KCM_Scope_System; } }
+using namespace KA::CMD;
 
-
-KANS_(PhaonLib)
+namespace KA { namespace PhaonLib {
 
 class Phaon_Symbol_Scope;
 class Phaon_Function_Vector;
@@ -58,7 +57,7 @@ public:
 };
 
 
-_KANS(PhaonLib)
+} }
 
 
 #endif //PHAON_RUNNER__H

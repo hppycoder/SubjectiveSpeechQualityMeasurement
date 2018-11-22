@@ -50,10 +50,10 @@
 #include <QThread>
 
 
-USING_KANS(KCM)
+using namespace KA::KCM;
 #ifdef USING_KPH
-USING_KANS(Phaon)
-USING_KANS(PhaonLib)
+using namespace KA::Phaon;
+using namespace KA::PhaonLib;
 #endif
 USING_QSNS(ScignStage)
 

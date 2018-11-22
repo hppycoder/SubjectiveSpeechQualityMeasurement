@@ -18,7 +18,7 @@
 #include "range-dbl.h"
 #include "precon.h"
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 class Assessment_Scores_Average
 {
@@ -48,6 +48,6 @@ public:
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // ASSESSMENT_SCORES_AVERAGE__H

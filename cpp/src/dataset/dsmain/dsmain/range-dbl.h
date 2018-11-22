@@ -14,7 +14,7 @@
 #include <QtGlobal>
 
 
-KANS_(DSM)
+namespace KA { namespace DSM {
 
 template<typename T, typename R, R low, R high>
 class Range_Dbl
@@ -49,6 +49,6 @@ static Range_Dbl cocon(T r) { return Range_Dbl(r); }
 };
 
 
-_KANS(DSM)
+} }
 
 #endif // RANGE_DBL__H
